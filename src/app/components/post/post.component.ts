@@ -9,7 +9,7 @@ import {IPost} from "../../models/post";
 export class PostComponent implements OnInit {
 
   @Input()
-  post: IPost
+  post: IPost;
 
   constructor() { }
 

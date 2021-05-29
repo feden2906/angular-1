@@ -9,10 +9,11 @@ import {IUser} from "../../models/user";
 export class UserComponent implements OnInit {
 
   @Input()
-  user: IUser
+  user: IUser;
 
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
