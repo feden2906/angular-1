@@ -1,0 +1,10 @@
+div {
+  background-color: indianred;
+  margin: 10px;
+  width: fit-content;
+}
+
+p, h2 {
+  margin: 5px;
+  padding: 5px;
+}
