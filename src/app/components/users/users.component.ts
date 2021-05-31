@@ -8,7 +8,6 @@ import {UsersService} from "../../services/users.service";
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
-
   users: IUser[];
 
   constructor(private usersService: UsersService) {
@@ -17,5 +16,4 @@ export class UsersComponent implements OnInit {
   ngOnInit(): void {
     this.usersService.getUsers().subscribe(value => this.users = value)
   }
-
 }

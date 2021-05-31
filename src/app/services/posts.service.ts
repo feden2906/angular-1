@@ -7,11 +7,9 @@ import {IPost} from "../models/post";
   providedIn: 'root'
 })
 export class PostsService {
-
   private url = 'https://jsonplaceholder.typicode.com/posts?userId='
 
   constructor(private httpClient: HttpClient) {
-
   }
 
   getPosts(id:number):Observable<IPost[]> {
