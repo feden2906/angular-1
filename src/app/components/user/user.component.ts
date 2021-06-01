@@ -18,5 +18,4 @@ export class UserComponent {
   openDetails(): void {
     this.router.navigate([this.user.id], {relativeTo: this.activatedRoute});
   }
-
 }

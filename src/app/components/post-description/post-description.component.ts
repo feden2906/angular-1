@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {IPost} from "../../models/Post";
 import {ActivatedRoute} from "@angular/router";
 import {PostService} from "../../services/post.service";
@@ -8,15 +8,13 @@ import {PostService} from "../../services/post.service";
   templateUrl: './post-description.component.html',
   styleUrls: ['./post-description.component.css']
 })
-export class PostDescriptionComponent  {
+export class PostDescriptionComponent {
 
-singlePost : IPost;
+  singlePost: IPost;
 
-  constructor( private activatedRoute: ActivatedRoute, private postService: PostService) {
+  constructor(private activatedRoute: ActivatedRoute, private postService: PostService) {
     this.activatedRoute.params.subscribe(params => {
       this.postService.getPost(params.id).subscribe(data => this.singlePost = data)
     })
   }
-
-
 }

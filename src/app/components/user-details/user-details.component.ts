@@ -17,5 +17,4 @@ export class UserDetailsComponent {
       this.userService.getUser(value.id).subscribe(data => this.singleUser = data)
     })
   }
-
 }
