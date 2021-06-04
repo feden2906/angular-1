@@ -1,0 +1,8 @@
+<div [className]="['box']">
+  <div [className]="['post-blocks']">
+    <app-post *ngFor="let post of posts"  [post]="post"></app-post>
+  </div>
+  <div [className]="['comments']" >
+    <router-outlet></router-outlet>
+  </div>
+</div>
