@@ -1,4 +1,5 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+                                                              // TODO роби пробіл між бібліотечними імпортами та своїми
 import {IUser} from "../../models/user";
 import {UsersService, DataTransferService} from "../../services";
 

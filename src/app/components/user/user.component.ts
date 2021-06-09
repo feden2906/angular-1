@@ -1,5 +1,6 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {IUser} from "../../models/user";
+                                                                    // TODO роби пробіл між бібліотечними імпортами та своїми
+import {IUser} from "../../models/user";                            // TODO додай індекс файл в моделі
 
 @Component({
   selector: 'app-user',
@@ -12,9 +13,9 @@ export class UserComponent {
   user: IUser;
 
   @Output()
-  userUp = new EventEmitter<IUser>();
+  userUp = new EventEmitter<IUser>();                               // TODO навіщо це - <IUser> ?
 
-
+                                                                    // TODO зайвий пробіл
  openUser() {
     this.userUp.emit(this.user);
  }
